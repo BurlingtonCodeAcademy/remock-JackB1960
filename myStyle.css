@@ -1,0 +1,104 @@
+/* I'm going with one stlysheet, that way I can call anything I styled without having to reinvent or trying to find it*/
+
+/* Being red/green color blind I rarely rely on colors*/
+
+body {
+    background-color: rgb(142, 225, 236);
+  }
+  
+  /* I'm trying to name the styles that relate to their purpose*/
+  
+  /* I'm also trying to place them in the order that they arrive in the code, reading from top to bottom*/
+  
+  #title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: fantasy;
+    font-size: 28px;
+    height: 270px;
+    margin: 0px;
+    border-bottom: 2px solid black;
+  }
+  
+  #titleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #image {
+    width: 15vw;
+  }
+  #imageBlock {
+    display: flex;
+    justify-content: space-around;
+    height: 120px;
+  }
+  /* Maybe not so obviouse, this one is for the writing inside labeling the pictures*/
+  
+  #blockPara {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+  }
+  #imageContainer {
+    flex-direction: column;
+    text-align: center;
+    background-color: grey;
+  }
+  #imageNames {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 22px 30px 2px 2px;
+    width: 100vw;
+  }
+  
+  /* I'm controling the postion of the images here*/
+  
+  #blockName {
+    display: inline-flex;
+    align-items: stretch;
+    justify-content: space-around;
+    height: 60px;
+    background-color: rgb(135, 155, 95);
+  }
+  
+  #btn {
+    display: flex;
+    direction: row;
+    align-items: center;
+    background-color: #f4511e;
+    border: none;
+    color: white;
+    padding: 8px 10px;
+    text-align: center;
+    font-size: 16px;
+    margin: 16px 16px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #btnContainer {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px Ariel;
+  }
+  #blockquote {
+    flex-direction: column;
+  }
+  #quoteContainer {
+    height: 25vh;
+    width: 97vw;
+    font-size: 16px;
+    margin-left: 1px;
+    margin-right: 1px;
+    background-color: rgb(88, 133, 63);
+  }
+  
