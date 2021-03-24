@@ -1,6 +1,8 @@
+<!-- Obligatory inputs for html projects -->
 <!DOCTYPE html>
 <html lang="en">
-// it all begins here
+
+<!-- more bligatory inputs to set the stage for viewing, title and links to my style sheet and other files and images in my directory-->
 
 <head>
   <meta charset="UTF-8">
@@ -9,44 +11,53 @@
   <title>Document</title>
   <link rel="styleSheet" href=./myStyle.css>
   </link>
-  //Sorry, didn't finish, got hung up oon colums
+  <link https://images.app.goo.gl/rRPmwR8hZWs2FoSe7>
+  </link>
+
+  <!-- this style is for the link buttons. I placed it at the top instead of the css file-->
+  <style>
+    a:hover {
+      background-color: yellow;
+    }
+  </style>
 </head>
 
 <body>
-  //from here to line 26 is the "header"
+  <!-- I begin the program here, a header at the top, the meat of the program ion the middle and a footer at the end. Where every you see "<div id = """" there will be a coorespondimng # tag in my styleSheet.css that styles the comntents betwen tjhe opeing, < , and closing, /> , tags-->
   <section class="header">
     <div id="title">
 
       <h1>
-        <b>Home Page</b>
+        <b>Muriels of Vermont</b>
       </h1>
 
       <p>
-        A Place For The Homes
-      </p>
+        A Place For The Sweaters</p>
 
     </div>
   </section>
-  // I've added a place holder for my images and a place for misc pargraphs.*\
 
-  <div id="imageContainer">
-    <p id="blockPara">Take a Look at this amazing <strong>home page</strong></p>
+  <!-- Note the inline "style" <span> and <strong>-->
+  <div id="titleContainer">
+    <span>
+      <p></p id="blockPara">Take a Look at this amazing <strong>home page</strong></p>
+    </span>
 
   </div>
 
-  //my images, all called up locally, easier to find the path this way
+  <!---my images, all called up locally, easier to find the path, this way I have an image file-->
 
   <div id="imageBlock">
 
-    <img id="image" src="/images/Laura.jpg" alt="Jacks" />
+    <img id="image" src="./images/Laura.jpg" alt="Jacks" />
 
-    <img id="image" src="/images/ethan.jpg" alt="Jacks" />
+    <img id="image" src="./images/ethan.jpg" alt="Jacks" />
 
-    <img id="image" src="/images/Cyrus.jpg" alt="Jacks" />
+    <img id="image" src="./images/Cyrus.jpg" alt="Jacks" />
 
   </div>
 
-  // my images
+  <!-- names under the photos -->
 
   <div id="imageNames">
     <p1>"Laura co-owner of Murials;"</p1>
@@ -54,36 +65,244 @@
     <p3>"Cyrus co-owner of Muriels"</p>
   </div>
 
-  // My link
+  <!-- For the life of me I can't get this link button centered -->
 
-  <div id="btn">
-    <p><a href="https://murielsofvermont.com/"></a>
-    <p id="blockPara">Tell me more</p>
+  <!-- The first quote placed in the quote container/ filler material rfom Aldo Leopold -->
+
+  <div id=blockButton>
+    <a href="https://murielsofvermont.com/">Tell me more</a>
   </div>
-
-  // my quote box
 
   <div id="quoteContainer">
-    <p>“The time has come for science to busy itself with the earth itself. The first step is to reconstruct a sample of what we had to start with. That in a nutshell is the Arboretum.” <i>The Arboretum and the University, The River of the Mother of God</i>
+    <p>“The time has come for science to busy itself with the earth itself. The first step is to reconstruct a
+      sample of what we had to start with. That in a nutshell is the Arboretum.” <i>TheArboretum and the University, The
+        River of the Mother of God</i>
     </p>
-    <p>“Like winds and sunsets, wild things were taken for granted until progress began to do away with them. Now we
-    face the question whether a still higher ‘standard of living’ is worth its cost in things natural, wild and
-    free.”<i>Foreword, A Sand County Almanac.</i></p>
+    <p>“Like winds and sunsets, wild things were taken for granted until progress began to do away with them.
+      Now we face the question whether a still higher ‘standard of living’ is worth its cost in things natural, wild and
+      free.”<i>Foreword, A Sand County Almanac.</i></p>
+
+    <p>“One of the penalties of an ecological education is that one lives alone in a world of wounds. Much of the damage
+      inflicted on land is quite invisible to laymen. An ecologist must either harden his shell and make believe that
+      the consequences of science are none of his business, or he must be the doctor who sees the marks of death in a
+      community that believes itself well and does not want to be told otherwise.” <i>Aldo Leopold, A Sand County
+        Almanac</i> </p>
+    <p>“Conservation is getting nowhere because it is incompatible with our Abrahamic concept of land. We abuse land
+      because we regard it as a commodity belonging to us. When we see land as a community to which we belong, we may
+      begin to use it with love and respect.” <i>Aldo Leopold</i></p>
+    "Aldo Leopold was an American author, philosopher, naturalist, scientist, ecologist, forester,
+    conservationist, and environmentalist. He was a professor at the University of Wisconsin and is best known for his
+    book A Sand County Almanac, which has sold more than two million copies."
   </div>
 
-  // A work in progress, I'm thinking about using a table if I can't control how much goes into a grid 
+  <!-- Changimng gears, we now have to have two columns. Instead of using a grid or a table I used CSS and flex -->
 
-  
-    <div id="tableContainer"><p>“One of the penalties of an ecological education is that one lives alone in a world of
-    wounds. Much of the damage inflicted on land is quite invisible to laymen. An ecologist must either harden his
-    shell and make believe that the consequences of science are none of his business, or he must be the doctor who
-    sees the marks of death in a community that believes itself well and does not want to be told otherwise.”
-      ― Aldo Leopold, A Sand County Almanac</p>
-    <p>“Conservation is getting nowhere because it is incompatible with our Abrahamic concept of land. We abuse land because we regard it as a commodity belonging to us. When we see land as a community to which we belong, we may begin to use it with love and respect.”
-        ― Aldo Leopold</p>
+  <!-- In orer to get the two coloumns I had to place them both with on the same class then seprate them once they are in the class -->
+  <div class="columns">
+
+    <!-- This sidebar was used to get the two columns to come side by side and not stacked on top of eah other with the Title for the left sidebar-->
+    <div id="sidebarWrapper">
+      <h2>
+        Muriels of Vermont
+      </h2>
+      <h2>
+        Awesomeness
+      </h2>
+
+      <!-- This is the left side bar with the title of h2 value and a few quote from Aldo Leopold as p values-->
+      <div id="leftSidebar">
+
+        <!-- Filler material from John Muir -->
+        <p> “I only went out for a walk and finally concluded to stay out till sundown, for going out, I found, was
+          really
+          going in.” - <i>John Muir</i>
+        </p>
+
+        <p>The mountains are calling and I must go.</p>
+        <p>In every walk with nature one receives far more than he seeks.</p>
+        <p>Climb the mountains and get their good tidings.</p>
+        <p>When we try to pick out anything by itself, we find it hitched to everything else in the universe.
+        </p>
+
+        <p>Everybody needs beauty as well as bread, places to play in and pray in, where nature may heal and give
+          strength
+          to body and soul.</p>
+        <p>Keep close to Nature’s heart... and break clear away, once in awhile, and climb a mountain or spend a week
+          in
+          the woods. Wash your spirit
+          clean.</p>
 
 
 
+        <p>When one tugs at a single thing in nature, he finds it attached to the rest of the world.</p>
+
+        <!-- Link to more John Muir, my page, not John's -->
+        <div id="blockButtonTwo">
+          <a href="./l1ContJohnMuir.html">Continue reading John Muir</a>
+        </div>
+
+        <!-- An iconic photo -->
+        <div>
+          <img id="imageJohn" src="./images/John_Muir.jpg">
+        </div>
+        <p>“Who wouldn’t be a mountaineer! Up here all the world’s prizes seem nothing.”</p>
+        <p>“When we try to pick out anything by itself, we find it hitched to everything else in the Universe.”</p>
+      </div>
+
+    </div>
+
+
+    <!-- One last quote -->
+    <!-- Right sidebar, still joined to the leftt ssidebar via the class id but sepeted in the class by the div id -->
+
+    <div id="rightSidebar">
+      <!--  A link to another page  -->
+      <dive> </dive>
+      <div id = "blockButtonTwo">
+        <a href="./listenToThis.html">Listen to this</a>
+      </div>
+      <p>
+        
+      </p>
+      <!-- Stuck in a date box mode -->
+      <div id="dateBox">
+        <p>July 4, 2020</p>
+
+      </div>
+
+      <!-- A poem from a dear friend, he just won the cowboy poet award, a big thing out west -->
+      <h3>Homecoming, Part One</h3>
+
+      <p>I woke but did not want to, from a dream where no one was at war with anyone, no one fleeing flood or
+        famine.It was a place with low human density, door gardens,
+        grain fields, pastures and forest on nearby hills,
+        and in the streams - plenty of fish.
+        And Everyone was at home.</p>
+
+      <!-- stuck in a date box -->
+      <div id="dateBox">
+        <p>July 4, 2020</p>
+      </div>
+
+
+      <p>As dreams go, it felt a bit like a small Nebraska town,</p>
+
+      <p>or might have been Syria or Honduras – some universal village anyway,
+        with abundant contentment in the absence of too much progress.
+        Kids played in the square till late, grandparents already sleeping.
+        At night, you could hear neighbors, cough, argue, making love,
+        and there was fresh bread in the morning – a short walk away
+      </p>
+      <p> It never quite works though, dozing back, to recover,
+        or edit such dreams. I wanted to shape this one, to conjure up the return
+        to such places for all who have had to flee them,
+        millions uprooting, bundling, leaving the elders
+        - leaving all behind.
+      </p>
+
+      <p>those who paid scoundrels with family treasure, to take them</p>
+
+      <img id="imageGeorge" </src="images/Wallace.jpg">
+
+
+      <p>in leaky boats, airless trucks, frigid train tops, force marched
+        to hostile borders and foreign tongues, then to endure weeks or months
+        under
+      </p>
+      <i> George and Nancy Wallace, Larimer County, Colorado USA</i>
+      <p>
+        bridges or blue tarps, be trapped in canvas cities,
+        - waking from their own dreams of home.
+      </p>
+      </h3>
+
+      <div id="blockButtonTwo">
+        <a href="l2PostAPoem.html">Post a Poem</a>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <!-- A link ??? to video -->
+
+
+
+  <!-- Now begins the end, the Footer. Again two columns side by side placed togethr in a setion id and then seperated by  div id -->
+  <!-- First section, email, message etc -->
+  <section id="footer">
+    <div id="footerHead">
+      <h1>Questions or comments? </h1>
+    </div>
+    <div id="footerWrapper">
+      <div id="inputsContainer">
+        <!-- The form with ionputs for name, e-mail and  message -->
+        <form action="/my-handling-form-page" method="post">
+          <ul>
+              <li>
+                  <lable for="name"> Name</lable>
+                  <input type="text" id="name" name="user_name">
+            </li>
+            <li>
+              <label for="mail">E-mail:</label>
+              <input type="email" id="mail" name="user_email">
+            </li>
+            <li>
+              <label for="msg">Message:</label>
+              <textarea id="msg" name="user_message"></textarea>
+              </li>
+          </ul>
+              </form>
+      </div>
+      <!-- Second secrtion 
+        I've added a quote from Mr Leopold before the many icons below -->
+      <div id="mediaWrapper">
+        <p>Aldo Leopold (January 11, 1887 – April 21, 1948) was an American author, philosopher, naturalist, scientist,
+          ecologist, forester, conservationist, and environmentalist. </p>
+
+        <!-- This is the right side of the footer with the fancy icons for contacting whomever resides at 1234 some roadn Gand Isle -->
+        <div id="mediaContainer">
+          <div id="mediaOne">
+            <div class="footIcons">
+              <img src="./images/footerlink-home.png" class="logos" alt="logos" />
+              <p class="logoBlurb">1234 some road</br>Grand Isle, VT 05485</p>
+            </div>
+            <div class="footIcons">
+              <img src="./images/footerlink-phone.png" class="logos" alt="logos" />
+              <p class="logoBlurb">(802)000-0000</p>
+            </div>
+            <div class="footIcons">
+              <img src="./images/footerlink-email.png" class="logos" alt="logos" />
+              <p class="logoBlurb">BCA@gmail.com</p>
+
+            </div>
+          </div>
+          <!-- And even more ways to contact me via icons (I have no social media presence) -->
+          <div id="mediaTwo">
+            <div class="footIcons">
+              <img src="./images/footerlink-twitter.png" class="logos" alt="logos" />
+              <p class="logoBlurb">@untitled</p>
+            </div>
+            <div class="footIcons">
+              <img src="./images/footerlink-instagram.png" class="logos" alt="logos" />
+              <p class="logoBlurb">instagram.com</p>
+            </div>
+            <div class="footIcons">
+              <img src="./images/footerlink-dribbble.png" class="logos" alt="logos" />
+              <p class="logoBlurb">Dribbble.com</p>
+
+            </div>
+            <div class="footIcons">
+              <img src="./images/footerlink-facebook.png" class="logos" alt="logos" />
+              <p class="logoBlurb">facebook.com</p>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 
 </html>

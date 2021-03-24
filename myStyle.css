@@ -1,104 +1,309 @@
-/* I'm going with one stlysheet, that way I can call anything I styled without having to reinvent or trying to find it*/
+/* I wanted very much to go with one style sheet but it kept geeting bogger with minor changes thta affrect all the pages so I added on a Two for this style sheet. In the end I created a second style sheet for a diifeent page */
 
 /* Being red/green color blind I rarely rely on colors*/
 
 body {
-    background-color: rgb(142, 225, 236);
-  }
+  background-color: rgb(142, 225, 236);
+}
+
+/* I'm trying to name the styles that relate to their purpose */
+
+/* I'm also trying to place them in the order that they arrive in the code, reading from top to bottom*/
+
+.headerThree{
+  display: flexbox;
+  justify-self: center;
+  flex-direction: row;
+  align-self: center;
+
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: fantasy;
+  font-size: 28px;
+  height: 27px;
+  margin: 60px;
+}
+#titleTwo{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family;
+  font-size: 18px;
+  height: 27px;
+  margin: 6px;
+}
+#titleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
-  /* I'm trying to name the styles that relate to their purpose*/
+  border-bottom: 2px solid black;
+}
+/* Not found on l2LearnMore page */
+#image {
+  width: 15vw;
+  margin-top: 10px;
+}
+#imageBlock {
+  display: flex;
+  justify-content: space-around;
+}
+/* Not found on l2LearnMore page */
+#blockPara {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+}
+/* Not found on l2LearnMore page */
+#imageContainer {
+  /* Not found on l2LearnMore page */
+  flex-direction: row;
+  align-content: center;
+}
+/* Not found on l2LearnMore page */
+#imageNames {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 22px 30px 2px 2px;
+  width: 100vw;
+}
+/* Not found on l2LearnMore page */
+#blockName {
+  display: inline-flex;
+  align-items: stretch;
+  justify-content: space-around;
+  height: 60px;
+  background-color: black;
+}
+/* Not found on l2LearnMore page */
+#blockButton {
+  display: inline-flex;
+  flex-direction: row;
+  align-content: center;
+  background-color:rgb(176, 156, 209);
+  border: none;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.6;
+  transition: 0.3s;
+  cursor: pointer;
+  padding: 8px 10px;
+  margin-left: 450px;
+  margin-top: 10px;
+  }
+/* Not found on l2LearnMore page */
+#button {
+  display: flex;
+  direction: column;
+  width: 50px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px Ariel;
+  /* margin-top: 16px; */
+  background-color: blueviolet;
+  margin-top: 10px;
+  border-top: 14px;
+  border-color: black
+}
+
+/* Not found on l2LearnMore page */
+#quoteContainer {
+  display: flexbox;
+  flex-direction: row;
+  align-self: flex-start;
+  font-size: 16px;
+  margin-left: 10;
+  margin-right: 1px;
+  margin-bottom: 10px;
+  background-color: gray;
+ 
+}
+/* An example where I added a two to the original css and changed some minor things */
+#quoteContainerTwo {
+  display: flexbox;
+  flex-direction: row;
+  align-self: flex-start;
+  height: 40vh;
+  width: 60vw;
+  margin-left: 20vw;
+  background-color: gray;
+ }
+
+ /* This is the filler */
+#blogContainer {
+  width: 60vw;
+  margin-left: 20vw;
+  margin-top: auto;
+  margin-bottom: 8px;
   
-  /* I'm also trying to place them in the order that they arrive in the code, reading from top to bottom*/
+}
+/* Not found on l2LearnMore page */
+#header {
+  display: flex;
+  align-items: center;
+}
+/* Not found on l2LearnMore page */
+#headerTwo {
+  display: flex;
+  flex-direction: column;
+}
+.columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: 
+  space-around;
+  height: 260vh;
+  border-bottom:  2px solid black;
+  height: vh;
+}
+.columnsTwo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-bottom:  2px solid black;
+  height: 250vh;
+}
+/*----footer----*/
+
+
+#blockButtonTwo {
+  display: inline-flex;
+  flex-direction: column;
+  align-content: flex-end;
+  background-color:rgb(176, 156, 209);
+  border: none;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.6;
+  transition: 0.3s;
+  cursor: pointer;
+  padding: 4px 10px;
+  width: 12vw;
+}
+#rightSidebar {
+  display: outside;
+  flex-direction: column;
+  align-content:flex-start;
+  justify-content: space-around;
+  width: 25vw;
+  height: 190vh;
+  margin-top: 60px;
+}
+#sideBarWrapper{
+  display: flex;
+  flex-direction: row;
+  width: 0vw;
+}
+#dateBox{
+  display: inline-flex;
+  flex-direction: row;
+  align-content: center;
+  background-color:gray;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+  padding: 4px 8px;
+}
+#video{
+  flex-direction: column;
+  align-self: flex-end;
+  width: 40vw;
+  height: vh;
   
-  #title {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    font-family: fantasy;
-    font-size: 28px;
-    height: 270px;
-    margin: 0px;
-    border-bottom: 2px solid black;
-  }
   
-  #titleContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #image {
-    width: 15vw;
-  }
-  #imageBlock {
-    display: flex;
-    justify-content: space-around;
-    height: 120px;
-  }
-  /* Maybe not so obviouse, this one is for the writing inside labeling the pictures*/
+}
   
-  #blockPara {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 16px;
-  }
-  #imageContainer {
-    flex-direction: column;
-    text-align: center;
-    background-color: grey;
-  }
-  #imageNames {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 22px 30px 2px 2px;
-    width: 100vw;
-  }
+#leftSidebar {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  width: 40vw;
+  height: 103vh;
+  background-color: purple;
+}
+#leftSidebarTwo{display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  width: 40vw;
+  height: vh;
+  background-color: purple
   
-  /* I'm controling the postion of the images here*/
-  
-  #blockName {
-    display: inline-flex;
-    align-items: stretch;
-    justify-content: space-around;
-    height: 60px;
-    background-color: rgb(135, 155, 95);
-  }
-  
-  #btn {
-    display: flex;
-    direction: row;
-    align-items: center;
-    background-color: #f4511e;
-    border: none;
-    color: white;
-    padding: 8px 10px;
-    text-align: center;
-    font-size: 16px;
-    margin: 16px 16px;
-    opacity: 0.6;
-    transition: 0.3s;
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  #btnContainer {
-    display: flex;
-    width: 100vw;
-    align-items: center;
-    justify-content: center;
-    font-size: 10px Ariel;
-  }
-  #blockquote {
-    flex-direction: column;
-  }
-  #quoteContainer {
-    height: 25vh;
-    width: 97vw;
-    font-size: 16px;
-    margin-left: 1px;
-    margin-right: 1px;
-    background-color: rgb(88, 133, 63);
-  }
-  
+}
+#imageJohn{
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  width: 30vw;
+  height: 80vh;
+  margin-top: 25px;
+}
+#imageGeorge {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  float: left;
+  width: 15vw;
+  height: 35vh;
+}
+#footer {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 70vh;
+}
+#footerWrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 85vw;
+}
+#footerWrapperTwo{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 60vw;
+}
+#inputsContainer{
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+
+}
+#mediaWrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 35vw;
+  background-color: aquamarine;
+ }
+ #mediaOne{
+   display: inline;
+   flex-direction: column;
+   
+ }
+#mediaContainer{
+  display: flex;
+  flex-direction: row;
+}
+.footIcons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.logos{
+  width: 20px;
+  height: 20px;
+}
